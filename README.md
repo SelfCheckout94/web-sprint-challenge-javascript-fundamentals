@@ -34,6 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 -HOF are functions that recieve functions and callback functions are functions that are passed through a function
 
 3. Can you explain what a closure is and how you used it in the counter function? 
+-Closure is code that is only able to be accessed within the enclosure. We use it when we need to reach to an outside scope to access information
 
 4. Describe the four principles of the 'this' keyword.
 -Window binding
@@ -77,7 +78,7 @@ Test your knowledge of advanced array methods and callbacks.
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task D: Classes
 
