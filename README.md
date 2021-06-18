@@ -37,10 +37,10 @@ Edit this document to include your answers after each question. Make sure to lea
 -Closure is code that is only able to be accessed within the enclosure. We use it when we need to reach to an outside scope to access information
 
 4. Describe the four principles of the 'this' keyword.
--Window binding
--Implicit binding
--New binding
--Explicit binding
+-Window binding - 'this' is bound globally and prints the entire window
+-Implicit binding - the value of 'this' isnt defined explicitly and is instead given a value directly
+-New binding - 'this' is given value when a new object is created with a constructor function
+-Explicit binding - uses .call, .bind, and .apply to give value to 'this'
 
 5. Why do we need super() in an extended class?
 -to inherit the properties of the parent class

@@ -147,7 +147,7 @@ function greeting(first, last){
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
  
 
-// -All of them are arrow functions. Not sure about reduce but I couldn't see any other way to make it an arrow function
+// -All of them are arrow functions. Not sure about reduce but I couldn't see any other way to make it an arrow function with less code
 
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
@@ -217,8 +217,8 @@ class CuboidMakerTwo{
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
@@ -227,7 +227,22 @@ class CuboidMakerTwo{
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
 
+// It seems weird that this is a subclass of CuboidMakerTwo because each lwh are equal to one another. I wasn't sure if I needed to initialize another property but I did 
+// anyway to require a little less code in the methods
 
+class CubeMaker extends CuboidMakerTwo {
+  constructor (attr){
+    super(attr)
+    this.sides = attr.sides
+  }
+  
+  volume(){
+    return this.sides ** 3
+  }
+  surfaceArea(){
+    return 6 * (this.sides ** 2)
+  }
+}
 
 
 
