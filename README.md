@@ -28,14 +28,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+-.forEach loops through and array but has no return value. .map makes a new array from the results of the provided function.
 
 2. Explain the difference between a callback and a higher order function.
+-HOF are functions that recieve functions and callback functions are functions that are passed through a function
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
 4. Describe the four principles of the 'this' keyword.
+-Window binding
+-Implicit binding
+-New binding
+-Explicit binding
 
 5. Why do we need super() in an extended class?
+-to inherit the properties of the parent class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
